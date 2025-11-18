@@ -15,14 +15,17 @@
   html {
     font-family: var(--font-sans);
     font-feature-settings: "rlig" 1, "calt" 1;
+    scroll-behavior: smooth;
+    background: #000;
+    color: #fff;
   }
 
   body {
-    @apply antialiased;
+    @apply antialiased bg-black text-white;
   }
 }
 
-/* Custom utility classes for shadcn/ui patterns */
+/* Cosmic visual flourishes */
 @layer utilities {
   .animate-in {
     animation-name: animateIn;
